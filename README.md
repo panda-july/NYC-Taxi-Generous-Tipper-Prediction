@@ -80,7 +80,7 @@ In this fictional scenario, the New York City Taxi and Limousine Commission (TLC
 
 ### Issues
 * Not representative data. This dataset only had credit tip data, cash tip were not included. 
-* Lack of data. This dataset didn't include tip percent feature, could not know the actual tip percent passengers . 
+* Lack of data. This dataset didn't include tip percent feature, could not know the actual tip percent. 
 * Vendor 1 and Vendor 2 may have different way to round tip_amount, one vendor may round down to 0.05, another one may round  to 0.01. The calculated tip percent may different from passenger actual choice.
   |Vendor|tip_amount calculation(assumption)|Example|
   |:-|:-|:-|
@@ -98,7 +98,7 @@ In this fictional scenario, the New York City Taxi and Limousine Commission (TLC
     * Model assumptions:
         * Two vendors only had two way to calculate tip_amount, round tip_amount to .01 or round down to .05.
     * Model score:
-    
+
 |score|precision|recall   |F1      |accuracy|ROC_AUC |
 |:-   |:-       |:-       |:-      |:-      |:-      |
 |train|0.786816 |0.844237 |0.814516|0.732109|0.747175|
